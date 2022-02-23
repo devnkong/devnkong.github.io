@@ -21,11 +21,15 @@
                 <name>Kezhi Kong</name>
               </p>
               <!-- bio -->
-              <p>I am a PhD student at the <a href="https://ai.google/research">Computer Science Department</a>, <a href="https://ai.google/research">University of Maryland, College Park</a>, where I'm advised by Prof. <a href="https://ai.google/research"> Tom Goldstein</a>. I obtained my Bachelor from <a href="https://zju.edu.cn">Zhejiang University</a>, supervised by <a href="">Prof. Wei Chen</a>. You can reach me through my-last-name@cs.umd.edu.
+              <p>I am a PhD student at the <a href="https://www.cs.umd.edu/">Computer Science Department</a>, <a href="https://umd.edu/">University of Maryland, College Park</a>, where I'm advised by <a href="https://www.cs.umd.edu/~tomg/">Prof. Tom Goldstein</a>. I obtained my Bachelor degree from <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, supervised by <a href="http://www.cad.zju.edu.cn/home/chenwei/">Prof. Wei Chen</a>. I can be reached by my-last-name@cs.umd.edu.
               </p>
 
               <p>
-                At Google I've worked on <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                I will be joining AWS AI in summer 2022 as an Applied Scientist Intern working with Dr. Da Zheng.
+              </p>
+
+              <p>
+                我的中文名字是孔柯智。
               </p>
               <p style="text-align:center">
                 <!-- <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp/&nbsp -->
@@ -37,7 +41,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/JonBarron_circle.jpg" class="hoverZoomLink"></a>
+              <a href="images/kezhi_portrait.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/kezhi_portrait.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -48,7 +52,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I do research in Machine Learning. My recent works focus on Graph Learning, especially to universally enhance the performance and scalability of Graph Neural Networks (GNNs). I have also worked in Adversarial Attacks/Defenses, Semi-supervised Learning, Meta Learning, and Medical Imaging. Representative papers are <span class="highlight">highlighted</span>.
+                I do research in Machine Learning. My recent works focus on <em>Graph Learning</em>, especially to universally enhance the performance and scalability of Graph Neural Networks (GNNs). I have also worked in <em>Adversarial Attacks/Defenses</em>, <em>Semi-supervised Learning</em>, <em>Meta Learning</em>, and <em>Medical Imaging</em>. Below are my selected publications.
+                <!-- Representative papers are <span class="highlight">highlighted</span>  -->
               </p>
             </td>
           </tr>
@@ -56,65 +61,120 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/blocknerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/blocknerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function blocknerf_start() {
-                  document.getElementById('blocknerf_image').style.opacity = "1";
-                }
-
-                function blocknerf_stop() {
-                  document.getElementById('blocknerf_image').style.opacity = "0";
-                }
-                blocknerf_stop()
-              </script>
+              <img src="images/vq-gnn.png" alt="PontTuset" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+							<a href="https://arxiv.org/abs/2110.14363">
+                <papertitle>VQ-GNN: A Universal Framework to Scale up Graph Neural Networks using Vector Quantization</papertitle>
               </a>
               <br>
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-              <a href="http://casser.io/">Vincent Casser</a>,
-              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
-              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://sites.google.com/corp/view/kretzschmar/">Henrik Kretzschmar</a>
+              <strong>Kezhi Kong</strong>*, Mucong Ding*, Jingling Li, Chen Zhu, John P Dickerson, Furong Huang, Tom Goldstein.
               <br>
-        <em>arXiv</em>, 2022
+              <em>NeurIPS</em>, 2021
               <br>
-              <a href="https://waymo.com/research/block-nerf/">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
               <p></p>
-              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/flag.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://arxiv.org/abs/2010.09891">
+                <papertitle>FLAG: Adversarial Data Augmentation for Graph Neural Networks</papertitle>
+              </a>
+              <br>
+              <strong>Kezhi Kong</strong>, Guohao Li, Mucong Ding, Zuxuan Wu, Chen Zhu, Bernard Ghanem, Gavin Taylor, Tom Goldstein.
+              <br>
+              <em>Arxiv</em>, 2021
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/gds.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://openreview.net/forum?id=XvgPGWazqRH">
+                <papertitle>A Closer Look at Distribution Shifts and Out-of-Distribution Generalization on Graphs</papertitle>
+              </a>
+              <br>
+              Mucong Ding*, <strong>Kezhi Kong</strong>*, Jiuhai Chen*, John Kirchenbauer, Micah Goldblum, David Wipf, Furong Huang, Tom Goldstein.
+              <br>
+              <em>DistShift Workshop @ NeurIPS (Spotlight)</em>, 2021
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/grad-init.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://arxiv.org/abs/2102.08098">
+                <papertitle>GradInit: Learning to Initialize Neural Networks for Stable and Efficient Training</papertitle>
+              </a>
+              <br>
+                Chen Zhu, Renkun Ni, Zheng Xu, <strong>Kezhi Kong</strong>, W Ronny Huang, Tom Goldstein.
+              <br>
+              <em>NeurIPS</em>, 2021
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/meta-learn.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://arxiv.org/abs/2010.07092">
+                <papertitle>Data Augmentation for Meta-Learning</papertitle>
+              </a>
+              <br>
+                Renkun Ni, Micah Goldblum, Amr Sharaf, <strong>Kezhi Kong</strong>, Tom Goldstein.
+              <br>
+              <em>ICML</em>, 2021
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/shot-vae.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://arxiv.org/abs/2011.10684">
+                <papertitle>SHOT-VAE: Semi-supervised Deep Generative Models With Label-aware ELBO Approximations</papertitle>
+              </a>
+              <br>
+                Hao-Zhe Feng, <strong>Kezhi Kong</strong>, Minghao Chen, Tianye Zhang, Minfeng Zhu, Wei Chen.
+              <br>
+              <em>AAAI</em>, 2021
+              <br>
+              <p></p>
             </td>
           </tr>
 					
         </tbody></table>
 
 				<!-- Misc -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Misc</heading>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
 
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
+        <!-- <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
             <td width="75%" valign="center">
@@ -127,39 +187,14 @@
               <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
             </td>
           </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Basically <br> Blog Posts</heading>
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-              <br>
-              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-              <br>
-              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-            </td>
-          </tr>
-					
-					
-        </tbody></table>
+        </tbody></table> -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Secretly stolen from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>   
+                Website template secretly stolen from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>   
               </p>
             </td>
           </tr>
